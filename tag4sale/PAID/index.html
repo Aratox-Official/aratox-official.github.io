@@ -4,65 +4,100 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>[PAID] Tag for Sale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            color: #e0e0e0;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
+            padding: 20px;
         }
+        
         .container {
             text-align: center;
-            padding: 20px;
-            border: 3px solid #ffcc00;
-            border-radius: 15px;
-            background-color: #1e1e1e;
-            max-width: 600px;
+            padding: 40px 30px;
+            border: none;
+            border-radius: 20px;
+            background-color: #1f2024;
+            max-width: 500px;
             width: 90%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 0 5px rgba(255, 204, 0, 0.1);
+            transition: transform 0.3s ease;
         }
+
+        .container:hover {
+            transform: translateY(-5px);
+        }
+
         h1 {
-            font-size: 2.5em;
+            font-size: 2.8em;
+            font-weight: 700;
             color: #ffcc00;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
         }
+
         p {
-            font-size: 1.2em;
-            margin: 10px 0;
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin: 15px 0;
+            color: #b0b0b0;
         }
+
         .price {
-            font-size: 2em;
+            font-size: 2.5em;
+            font-weight: 700;
             color: #00ffcc;
-            margin: 20px 0;
+            margin: 30px 0;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: rgba(0, 255, 204, 0.05);
+            text-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
         }
+
         .cta {
             display: inline-block;
-            padding: 15px 30px;
-            font-size: 1.2em;
+            padding: 15px 40px;
+            font-size: 1.25em;
+            font-weight: 700;
             color: #fff;
             background-color: #ff6600;
             border: none;
-            border-radius: 10px;
+            border-radius: 30px;
             cursor: pointer;
             text-decoration: none;
-            transition: background-color 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 102, 0, 0.4);
+            transition: background-color 0.3s ease, transform 0.1s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 15px;
         }
+
         .cta:hover {
-            background-color: #ff3300;
+            background-color: #e65c00;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 102, 0, 0.6);
+        }
+
+        .cta:active {
+            transform: translateY(0);
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>[PAID] Team Tag for Sale</h1>
-        <p>Are you interested in owning the [PAID] team tag on Nitro Type?</p>
+        <p>Are you interested in owning the [PAID] team tag on Nitro Type? This is a rare chance to buy a great tag!</p>
         <p>This exclusive tag is available for purchase for:</p>
         <div class="price">20,000,000 Nitro Cash</div>
-        <a class="cta" href="https://aratox.pro/link/cc">Contact to Buy</a>
+        <a class="cta" href="https://aratox.pro/link/cc" target="_blank">Make an Offer!</a>
     </div>
 </body>
 </html>
